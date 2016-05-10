@@ -3,6 +3,8 @@ package com.flatironschool.javacs;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 import org.jsoup.nodes.Element;
 import org.jsoup.nodes.Node;
@@ -39,7 +41,7 @@ public class WikiPhilosophy {
 		Iterable<Node> iter = new WikiNodeIterable(firstPara);
 		for (Node node: iter) {
 			if (node instanceof TextNode) {
-				System.out.print(node);
+				//System.out.print(node);
 			}
         }
         // TODO remove this line 
@@ -49,8 +51,44 @@ public class WikiPhilosophy {
         //throw new UnsupportedOperationException(msg);
 
         // Start of implementation
-		for (Element x : paragraphs) {
+        
+        // Add the beginning URL to our visited set and add to our output
+        HashSet<String> visited = new HashSet<>();
+        visited.add(url);
+        List<String> output = new ArrayList<>();
+        output.add(url);
+        wikiSearch(url, visited, output);  
+        System.out.println(output);
+	}
 
-		}        
+	public static void wikiSearch(String url, HashSet<String> visited, List<String> output) {
+		for (Element current: paragraphs) {
+			Iterable<Node> iter2 = new WikiNodeIterable(current);
+			for (Node node: iter2) {
+				if (node instanceof Element) {
+					Element currElement = (Element) node;
+					String tag = currElement.tagName();
+					String currUrl = currElement.text();
+					if (tag.equals("a")) {
+						if (validLink(currElement, visited)) {
+							output.add(currUrl);
+							wikiSearch(currUrl, visited, output);
+						}
+					}
+				}
+        	}
+        }
+	}
+
+	public static boolean validLink(Element current, HashSet<String> visited) {
+
+
+
+
+
+
+
+
+
 	}
 }

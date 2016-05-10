@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="1" failures="0" hostname="PJs-MacBook-Pro.local" name="com.flatironschool.javacs.WikiPhilosophyTest" skipped="0" tests="1" time="1.777" timestamp="2016-05-09T19:16:42">
+<testsuite errors="0" failures="0" hostname="PJs-MacBook-Pro.local" name="com.flatironschool.javacs.WikiPhilosophyTest" skipped="0" tests="1" time="1.33" timestamp="2016-05-10T14:08:13">
   <properties>
     <property name="java.vendor" value="Oracle Corporation" />
     <property name="env.VISUAL" value="subl -w" />
@@ -11,7 +11,7 @@
     <property name="os.name" value="Mac OS X" />
     <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/classes" />
     <property name="env.TMPDIR" value="/var/folders/h9/l5_y1f9d29jd_37c76nrzphm0000gn/T/" />
-    <property name="env.PWD" value="/Users/pj/Development/code/cs-wikipedia-philosophy-lab-codeU/javacs-lab05" />
+    <property name="env.PWD" value="/Users/pj/Development/code/cs-wikipedia-philosophy-lab-codeU" />
     <property name="env.LANG" value="en_US.UTF-8" />
     <property name="java.vm.specification.vendor" value="Oracle Corporation" />
     <property name="ant.home" value="/usr/local/Cellar/ant/1.9.6/libexec" />
@@ -27,6 +27,7 @@
     <property name="env._system_type" value="Darwin" />
     <property name="env.PATH" value="/Users/pj/.rvm/gems/ruby-2.2.3/bin:/Users/pj/.rvm/gems/ruby-2.2.3@global/bin:/Users/pj/.rvm/rubies/ruby-2.2.3/bin:/Applications/Postgres.app/Contents/Versions/9.4/bin:/usr/local:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/Users/pj/.rvm/bin" />
     <property name="user.language" value="en" />
+    <property name="env.BUNDLE_ORIG_GEM_PATH" value="/Users/pj/.rvm/gems/ruby-2.2.3:/Users/pj/.rvm/gems/ruby-2.2.3@global" />
     <property name="env.rvm_prefix" value="/Users/pj" />
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib" />
     <property name="ant.project.default-target" value="build" />
@@ -45,11 +46,12 @@
     <property name="env.GIT_MERGE_AUTOEDIT" value="no" />
     <property name="env.rvm_bin_path" value="/Users/pj/.rvm/bin" />
     <property name="file.encoding.pkg" value="sun.io" />
-    <property name="env.SHLVL" value="2" />
+    <property name="env.SHLVL" value="3" />
     <property name="file.separator" value="/" />
     <property name="env._system_version" value="10.11" />
     <property name="java.specification.name" value="Java Platform API Specification" />
     <property name="java.class.version" value="52.0" />
+    <property name="env.BUNDLE_ORIG_PATH" value="/Users/pj/.rvm/gems/ruby-2.2.3/bin:/Users/pj/.rvm/gems/ruby-2.2.3@global/bin:/Users/pj/.rvm/rubies/ruby-2.2.3/bin:/Applications/Postgres.app/Contents/Versions/9.4/bin:/usr/local:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/Users/pj/.rvm/bin" />
     <property name="user.country" value="US" />
     <property name="ant.file.JavaCS" value="/Users/pj/Development/code/cs-wikipedia-philosophy-lab-codeU/javacs-lab05/build.xml" />
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre" />
@@ -60,6 +62,7 @@
     <property name="env.TERM_PROGRAM_VERSION" value="361.1" />
     <property name="path.separator" value=":" />
     <property name="java.vm.version" value="25.74-b02" />
+    <property name="env.JAVA_MAIN_CLASS_23607" value="org.apache.tools.ant.launch.Launcher" />
     <property name="ant.library.dir" value="/usr/local/Cellar/ant/1.9.6/libexec/lib" />
     <property name="junit.output.dir" value="junit" />
     <property name="env.IRBRC" value="/Users/pj/.rvm/rubies/ruby-2.2.3/.irbrc" />
@@ -70,19 +73,19 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
     <property name="env.GEM_PATH" value="/Users/pj/.rvm/gems/ruby-2.2.3:/Users/pj/.rvm/gems/ruby-2.2.3@global" />
-    <property name="user.home" value="/Users/pj" />
     <property name="target" value="1.7" />
+    <property name="user.home" value="/Users/pj" />
     <property name="java.specification.vendor" value="Oracle Corporation" />
     <property name="env.TERM_PROGRAM" value="Apple_Terminal" />
-    <property name="java.library.path" value="/Users/pj/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
     <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.library.path" value="/Users/pj/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
     <property name="env.SVN_EDITOR" value="subl -w" />
     <property name="java.vm.vendor" value="Oracle Corporation" />
     <property name="gopherProxySet" value="false" />
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
-    <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.flatironschool.javacs.WikiPhilosophyTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/pj/Development/code/cs-wikipedia-philosophy-lab-codeU/javacs-lab05/junit/TEST-com.flatironschool.javacs.WikiPhilosophyTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/Users/pj/Development/code/cs-wikipedia-philosophy-lab-codeU/javacs-lab05/junitvmwatcher4638088841014312318.properties propsfile=/Users/pj/Development/code/cs-wikipedia-philosophy-lab-codeU/javacs-lab05/junit2699660334570232102.properties" />
     <property name="java.class.path" value="/Users/pj/Development/code/cs-wikipedia-philosophy-lab-codeU/javacs-lab05/bin:/Users/pj/Development/code/cs-wikipedia-philosophy-lab-codeU/javacs-lab05/lib/jsoup-1.8.3.jar:/Users/pj/Development/code/cs-wikipedia-philosophy-lab-codeU/javacs-lab05/lib/junit-4.12.jar:/Users/pj/Development/code/cs-wikipedia-philosophy-lab-codeU/javacs-lab05/lib/hamcrest-core-1.3.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-launcher.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-junit.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-junit4.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.flatironschool.javacs.WikiPhilosophyTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/pj/Development/code/cs-wikipedia-philosophy-lab-codeU/javacs-lab05/junit/TEST-com.flatironschool.javacs.WikiPhilosophyTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/Users/pj/Development/code/cs-wikipedia-philosophy-lab-codeU/javacs-lab05/junitvmwatcher4685376403260359661.properties propsfile=/Users/pj/Development/code/cs-wikipedia-philosophy-lab-codeU/javacs-lab05/junit3280263754258665347.properties" />
     <property name="env.TERM_SESSION_ID" value="E7AD2BCB-4201-4B68-9E59-C1B7B84ABE4A" />
     <property name="env.USR_PATHS" value="/usr/local:/usr/local/bin:/usr/local/sbin:/usr/bin" />
     <property name="ant.file.type.JavaCS" value="file" />
@@ -91,35 +94,319 @@
     <property name="java.vm.specification.version" value="1.8" />
     <property name="sun.cpu.endian" value="little" />
     <property name="sun.os.patch.level" value="unknown" />
-    <property name="debuglevel" value="source,lines,vars" />
     <property name="env.HOME" value="/Users/pj" />
+    <property name="debuglevel" value="source,lines,vars" />
     <property name="java.io.tmpdir" value="/var/folders/h9/l5_y1f9d29jd_37c76nrzphm0000gn/T/" />
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
     <property name="env.SSH_AUTH_SOCK" value="/private/tmp/com.apple.launchd.gibcbSKuOy/Listeners" />
-    <property name="os.arch" value="x86_64" />
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+    <property name="os.arch" value="x86_64" />
     <property name="java.ext.dirs" value="/Users/pj/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
-    <property name="user.dir" value="/Users/pj/Development/code/cs-wikipedia-philosophy-lab-codeU/javacs-lab05" />
+    <property name="user.dir" value="/Users/pj/Development/code/cs-wikipedia-philosophy-lab-codeU" />
     <property name="line.separator" value="&#xa;" />
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
     <property name="env.EDITOR" value="subl -w" />
     <property name="basedir" value="/Users/pj/Development/code/cs-wikipedia-philosophy-lab-codeU/javacs-lab05" />
     <property name="ant.java.version" value="1.8" />
-    <property name="env.JAVA_MAIN_CLASS_21895" value="org.apache.tools.ant.launch.Launcher" />
     <property name="ant.core.lib" value="/usr/local/Cellar/ant/1.9.6/libexec/lib/ant.jar" />
     <property name="source" value="1.7" />
     <property name="file.encoding" value="UTF-8" />
-    <property name="java.specification.version" value="1.8" />
     <property name="env.GIT_EDITOR" value="subl -w" />
+    <property name="java.specification.version" value="1.8" />
     <property name="ant.project.invoked-targets" value="test" />
     <property name="env.FLATIRON_VERSION" value="1.1.1" />
   </properties>
-  <testcase classname="com.flatironschool.javacs.WikiPhilosophyTest" name="testMain" time="1.157">
-    <error message="Complete this lab by adding your code and removing this statement." type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: Complete this lab by adding your code and removing this statement.
-	at com.flatironschool.javacs.WikiPhilosophy.main(WikiPhilosophy.java:49)
-	at com.flatironschool.javacs.WikiPhilosophyTest.testMain(WikiPhilosophyTest.java:29)
-</error>
-  </testcase>
-  <system-out><![CDATA[Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented,[13] and specifically designed to have as few implementation dependencies as possible. It is intended to let application developers "write once, run anywhere" (WORA),[14] meaning that compiled Java code can run on all platforms that support Java without the need for recompilation.[15] Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of computer architecture. As of 2016, Java is one of the most popular programming languages in use,[16][17][18][19] particularly for client-server web applications, with a reported 9 million developers.[citation needed] Java was originally developed by James Gosling at Sun Microsystems (which has since been acquired by Oracle Corporation) and released in 1995 as a core component of Sun Microsystems' Java platform. The language derives much of its syntax from C and C++, but it has fewer low-level facilities than either of them.]]></system-out>
+  <testcase classname="com.flatironschool.javacs.WikiPhilosophyTest" name="testMain" time="0.901" />
+  <system-out><![CDATA[LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+LINK!
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
