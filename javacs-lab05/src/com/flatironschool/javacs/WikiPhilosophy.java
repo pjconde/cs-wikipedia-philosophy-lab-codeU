@@ -44,7 +44,7 @@ public class WikiPhilosophy {
 				//System.out.print(node);
 			}
         }
-        // TODO remove this line 
+
         // the following throws an exception so the test fails
         // until you update the code
         //String msg = "Complete this lab by adding your code and removing this statement.";
@@ -57,38 +57,69 @@ public class WikiPhilosophy {
         visited.add(url);
         List<String> output = new ArrayList<>();
         output.add(url);
-        wikiSearch(url, visited, output);  
-        System.out.println(output);
+        List<String> n = wikiSearch(url, visited, output);
+        System.out.println(n.size());
 	}
 
-	public static void wikiSearch(String url, HashSet<String> visited, List<String> output) {
-		for (Element current: paragraphs) {
+	public static List<String> wikiSearch(String url, HashSet<String> visited, 
+		List<String> output) throws IOException {
+		Elements paragraphs = wf.fetchWikipedia(url);
+		Node text = null;
+		if (url.toLowerCase().contains("philosophy")) {
+			return output;
+		} else {
+			for (Element current: paragraphs) {
 			Iterable<Node> iter2 = new WikiNodeIterable(current);
 			for (Node node: iter2) {
-				if (node instanceof Element) {
-					Element currElement = (Element) node;
-					String tag = currElement.tagName();
-					String currUrl = currElement.text();
-					if (tag.equals("a")) {
-						if (validLink(currElement, visited)) {
-							output.add(currUrl);
-							wikiSearch(currUrl, visited, output);
+					if (node instanceof TextNode) {
+						text = node;
+					} else if (node instanceof Element) {
+						Element currElement = (Element) node;
+						String tag = currElement.tagName();
+						String currUrl = node.absUrl("abs:href");
+						if (tag.equals("a")) {
+							if (validLink(text, node, visited) 
+								&& text.toString().contains(node.toString())) {
+								output.add(currUrl);
+								wikiSearch(currUrl, visited, output);
+							}
 						}
 					}
-				}
+	        	}
         	}
-        }
+		}
+		return output;
 	}
 
-	public static boolean validLink(Element current, HashSet<String> visited) {
+	public static boolean validLink(Node text, Node current,
+	 HashSet<String> visited) {
+		Node parent = current.parentNode();
+		Element parentElem = (Element) parent;
+		System.out.println(parent);
+		String tag = parentElem.tagName();
+		boolean paren = parenCheck(text, current);
+		// Check for italics
+		// HashSet add returns true if succesfully added
+		if ((tag.equals("i") || tag.equals("em")) 
+			|| !visited.add(current.absUrl("abs:href")) || paren) {
+			return false;
+		}
+		return true;
+	}
 
-
-
-
-
-
-
-
-
+	public static boolean parenCheck(Node text, Node current) {
+		boolean hasParen = false;
+		String entire = text.toString();
+		String link = current.toString();
+		for (int x = 1; x < entire.length(); x++) {
+			String sub = entire.substring(0, x);
+			if (sub.contains("(")) {
+				hasParen = true;
+			}
+			if (hasParen && sub.contains(link)) {
+				return true;
+			}
+		}
+		return false;
 	}
 }
